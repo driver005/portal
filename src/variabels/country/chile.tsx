@@ -1,0 +1,17 @@
+export const chile = [
+    { value: "Antofagasta", label: "Antofagasta" },
+    { value: "Araucanía", label: "Araucanía" },
+    { value: "Arica y Parinacota", label: "Arica y Parinacota" },
+    { value: "Atacama", label: "Atacama" },
+    { value: "Aysén", label: "Aysén del General Carlos Ibáñez del Campo" },
+    { value: "Biobío", label: "Biobío" },
+    { value: "Coquimbo", label: "Coquimbo" },
+    { value: "O'Higgins", label: "Libertador General Bernardo O'Higgins" },
+    { value: "Los Lagos", label: "Los Lagos" },
+    { value: "Los Ríos", label: "Los Ríos" },
+    { value: "Magallanes", label: "Magallanes y de la Antártica Chilena" },
+    { value: "Maule", label: "Maule" },
+    { value: "Región Metropolitana", label: "Metropolitana de Santiago" },
+    { value: "Tarapacá", label: "Tarapacá" },
+    { value: "Valparaíso", label: "Valparaíso" },
+]

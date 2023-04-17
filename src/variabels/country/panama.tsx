@@ -1,0 +1,15 @@
+export const panama = [
+    { value: "Bocas del Toro", label: "Bocas del Toro" },
+    { value: "Chiriquí", label: "Chiriquí" },
+    { value: "Coclé", label: "Coclé" },
+    { value: "Colón", label: "Colón" },
+    { value: "Darién", label: "Darién" },
+    { value: "Herrera", label: "Herrera" },
+    { value: "Los Santos", label: "Los Santos" },
+    { value: "Panamá", label: "Panamá" },
+    { value: "Veraguas", label: "Veraguas" },
+    { value: "Panamá Oeste", label: "Panamá Oeste" },
+    { value: "Emberá", label: "Emberá" },
+    { value: "Guna Yala", label: "Guna Yala" },
+    { value: "Ngäbe-Buglé", label: "Ngäbe-Buglé" },
+]

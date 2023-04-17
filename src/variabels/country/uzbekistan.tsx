@@ -1,0 +1,16 @@
+export const uzbekistan = [
+    { value: "Tashkent", label: "Tashkent" },
+    { value: "Andijan Region", label: "Andijan Region" },
+    { value: "Bukhara Region", label: "Bukhara Region" },
+    { value: "Fergana Region", label: "Fergana Region" },
+    { value: "Jizzakh Region", label: "Jizzakh Region" },
+    { value: "Namangan Region", label: "Namangan Region" },
+    { value: "Navoiy Region", label: "Navoiy Region" },
+    { value: "Qashqadaryo Region", label: "Qashqadaryo Region" },
+    { value: "Samarqand Region", label: "Samarqand Region" },
+    { value: "Sirdaryo Region", label: "Sirdaryo Region" },
+    { value: "Surxondaryo Region", label: "Surxondaryo Region" },
+    { value: "Tashkent Region", label: "Tashkent Region" },
+    { value: "Xorazm Region", label: "Xorazm Region" },
+    { value: "Karakalpakstan", label: "Karakalpakstan" },
+]
