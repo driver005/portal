@@ -1,26 +1,27 @@
-import { Meta } from "@storybook/react"
-import React from "react"
-import PageDescription from "."
+import { Meta } from '@storybook/react';
+import React from 'react';
+import PageDescription from '.';
 
 export default {
-    title: "Atoms/PageDescription",
-    component: PageDescription,
-} as Meta<typeof PageDescription>
+  title: 'Atoms/PageDescription',
+  component: PageDescription,
+} as Meta<typeof PageDescription>;
 
-const Template = args => <PageDescription {...args} />
+export const TitleAndSubtitle = {
+  args: {
+    title: 'Region',
+    subtitle: 'Manage your regions',
+  },
+};
 
-export const TitleAndSubtitle = Template.bind({})
-TitleAndSubtitle.args = {
-    title: "Region",
-    subtitle: "Manage your regions",
-}
+export const TitleOnly = {
+  args: {
+    title: 'Region',
+  },
+};
 
-export const TitleOnly = Template.bind({})
-TitleOnly.args = {
-    title: "Region",
-}
-
-export const SubtitleOnly = Template.bind({})
-SubtitleOnly.args = {
-    subtitle: "Manage your regions",
-}
+export const SubtitleOnly = {
+  args: {
+    subtitle: 'Manage your regions',
+  },
+};

@@ -1,78 +1,77 @@
-import { Meta } from "@storybook/react"
-import React from "react"
-import { Controller, useForm, useWatch } from "react-hook-form"
-import ExperimentalSelect from "."
-import useToggleState from "@hooks/use-toggle-state"
-import { countries } from "@utils/countries"
-import Button from "@components/fundamentals/button"
-import Modal from "../../../modal"
+import { Meta } from '@storybook/react';
+import React from 'react';
+import { Controller, useForm, useWatch } from 'react-hook-form';
+import ExperimentalSelect from '.';
+import useToggleState from '@hooks/use-toggle-state';
+import { countries } from '@utils/countries';
+import Button from '@components/fundamentals/button';
+import Modal from '../../../modal';
 
 type SelectOption = {
-    value: string
-    label: string
-    isDisabled?: boolean
-    isFixed?: boolean
-}
+  value: string;
+  label: string;
+  isDisabled?: boolean;
+  isFixed?: boolean;
+};
 
 const options: SelectOption[] = [
-    {
-        value: "1",
-        label: "Americas",
-        isDisabled: true,
-    },
-    {
-        value: "2",
-        label: "Europe",
-        isFixed: true,
-    },
-    {
-        value: "3",
-        label: "Asia",
-    },
-    {
-        value: "4",
-        label: "Africa",
-    },
-    {
-        value: "5",
-        label: "Oceania",
-    },
-    {
-        value: "6",
-        label: "Antarctica",
-    },
-    {
-        value: "7",
-        label: "North America",
-    },
-    {
-        value: "8",
-        label: "South America",
-    },
-    {
-        value: "9",
-        label: "Central America",
-    },
-    {
-        value: "10",
-        label: "Caribbean",
-    },
-    {
-        value: "11",
-        label: "Middle East",
-    },
-]
+  {
+    value: '1',
+    label: 'Americas',
+    isDisabled: true,
+  },
+  {
+    value: '2',
+    label: 'Europe',
+    isFixed: true,
+  },
+  {
+    value: '3',
+    label: 'Asia',
+  },
+  {
+    value: '4',
+    label: 'Africa',
+  },
+  {
+    value: '5',
+    label: 'Oceania',
+  },
+  {
+    value: '6',
+    label: 'Antarctica',
+  },
+  {
+    value: '7',
+    label: 'North America',
+  },
+  {
+    value: '8',
+    label: 'South America',
+  },
+  {
+    value: '9',
+    label: 'Central America',
+  },
+  {
+    value: '10',
+    label: 'Caribbean',
+  },
+  {
+    value: '11',
+    label: 'Middle East',
+  },
+];
 
 const countryOptions = countries.map((c) => ({
-    label: c.name,
-    value: c.alpha2,
-}))
-
+  label: c.name,
+  value: c.alpha2,
+}));
 
 export default {
-    title: "Molecules/Select",
-    component: ExperimentalSelect,
-} as Meta<typeof ExperimentalSelect>
+  title: 'Molecules/Select',
+  component: ExperimentalSelect,
+} as Meta<typeof ExperimentalSelect>;
 
 // storiesOf("Molecules/Select/Next/Select", module).add(
 //   "Controlled Single Select",

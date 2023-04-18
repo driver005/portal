@@ -1,40 +1,37 @@
-import { Meta } from "@storybook/react"
-import React from "react"
-import { currencies } from "@utils/currencies"
-import MedusaPriceInput from "./"
+import { Meta } from '@storybook/react';
+import React from 'react';
+import { currencies } from '@utils/currencies';
+import MedusaPriceInput from './';
 
 function C(args) {
-    return (
-        <MedusaPriceInput
-            {...args}
-            currency={currencies[args.currency]}
-            onChange={console.log}
-        />
-    )
+  return <MedusaPriceInput {...args} currency={currencies[args.currency]} onChange={console.log} />;
 }
 
 export default {
-    title: "Organisms/MedusaPriceInput",
-    component: MedusaPriceInput,
-    argTypes: {
-        amount: {
-            description:
-                "Amount as received from the medusa server. Try both non-divisible and divisible currencies",
-        },
-        currency: {
-            description: "desc",
-            control: {
-                type: "select",
-            },
-            options: Object.values(currencies).map((c) => c.code),
-        },
+  title: 'Organisms/MedusaPriceInput',
+  component: MedusaPriceInput,
+  argTypes: {
+    amount: {
+      description:
+        'Amount as received from the medusa server. Try both non-divisible and divisible currencies',
     },
-} as Meta<typeof MedusaPriceInput>
+    currency: {
+      description: 'desc',
+      control: {
+        type: 'select',
+      },
+      options: Object.values(currencies).map((c) => c.code),
+    },
+  },
+} as Meta<typeof MedusaPriceInput>;
 
-const Template = (args) => <C {...args} />
+const Template = (args) => <C {...args} />;
 
-export const Default = Template.bind({})
-Default.args = {
-    currency: "USD",
+export const Default = {
+  render: Template,
+
+  args: {
+    currency: 'USD',
     amount: 1999,
-}
+  },
+};

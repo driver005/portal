@@ -1,24 +1,23 @@
-import { Meta } from "@storybook/react"
-import React from "react"
-import DollarSignIcon from "."
+import { Meta } from '@storybook/react';
+import React from 'react';
+import DollarSignIcon from '.';
 
 export default {
-    title: "Fundamentals/Icons/DollarSignIcon",
-    component: DollarSignIcon,
-    argTypes: {
-        size: {
-            control: {
-                type: "select",
-                options: ["24", "20", "16"],
-            },
-        },
+  title: 'Fundamentals/Icons/DollarSignIcon',
+  component: DollarSignIcon,
+  argTypes: {
+    size: {
+      control: {
+        type: 'select',
+        options: ['24', '20', '16'],
+      },
     },
-} as Meta<typeof DollarSignIcon>
+  },
+} as Meta<typeof DollarSignIcon>;
 
-const Template = args => <DollarSignIcon {...args} />
-
-export const Icon = Template.bind({})
-Icon.args = {
-    size: "24",
-    color: "currentColor",
-}
+export const Icon = {
+  args: {
+    size: '24',
+    color: 'currentColor',
+  },
+};

@@ -1,26 +1,24 @@
-import { Meta, ComponentStory } from "@storybook/react"
-import JSONView from "."
+import { Meta, StoryFn } from '@storybook/react';
+import JSONView from '.';
 
 export default {
-    title: "Molecules/JSONView",
-    component: JSONView,
-} as Meta<typeof JSONView>
+  title: 'Molecules/JSONView',
+  component: JSONView,
+} as Meta<typeof JSONView>;
 
-const Template: ComponentStory<typeof JSONView> = (args) => (
-    <JSONView {...args} />
-)
+export const Default = {
+  args: {
+    data: metadata,
+  },
+};
 
-export const Default = Template.bind({})
 const metadata = {
-    test: true,
-    valid_days: ["monday", "wednesday", "friday"],
-}
+  test: true,
+  valid_days: ['monday', 'wednesday', 'friday'],
+};
 
-Default.args = {
+export const WithName = {
+  args: {
     data: metadata,
-}
-
-export const WithName = Template.bind({})
-WithName.args = {
-    data: metadata,
-}
+  },
+};
