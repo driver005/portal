@@ -5,6 +5,7 @@ type BannerCardProps = {
     actions?: ActionType[]
     title: string
     thumbnail: string | null
+    children?: React.ReactNode
 } & React.RefAttributes<HTMLDivElement>
 
 type BannerCardDescriptionProps = {
@@ -12,6 +13,7 @@ type BannerCardDescriptionProps = {
         label: string
         onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
     }
+    children?: React.ReactNode
 }
 
 const BannerCard: React.FC<BannerCardProps> & {
@@ -63,7 +65,7 @@ const Description: React.FC<BannerCardDescriptionProps> = ({
     )
 }
 
-const Footer: React.FC = ({ children }) => {
+const Footer: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
     return <div className="mt-base">{children}</div>
 }
 

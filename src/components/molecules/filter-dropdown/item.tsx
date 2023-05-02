@@ -68,7 +68,7 @@ const FilterDropdownItem = ({
         }
 
         const newFilter = Object.entries(checkedState).reduce(
-            (acc, [key, value]) => {
+            (acc: any, [key, value]) => {
                 if (value === true) {
                     acc.push(key)
                 }
@@ -148,7 +148,8 @@ const FilterDropdownItem = ({
                             open={open}
                             setFilter={setFilter}
                             existingDate={filters}
-                            filterTitle={filterTitle}
+                            // filterTitle={filterTitle}
+                            existingFilter={filterTitle}
                         />
                     ) : (
                         options.map((el, i) => {
@@ -220,7 +221,7 @@ const parseDateFilter = (filter) => {
     if (!filter) {
         return {}
     }
-    const dateEntries = Object.entries(filter)
+    const dateEntries: any = Object.entries(filter)
 
     /**
      * From a query object we need to figure out which date filter that is
@@ -361,7 +362,7 @@ const DateFilter = ({
         }
     }, [currentFilter, relativeAmount, daysMonthsValue, startDate])
 
-    const handleDateFormat = (value: string | null) => {
+    const handleDateFormat = (value: string | Date | null) => {
         switch (currentFilter) {
             case DateFilters.InTheLast: {
                 // Relative date

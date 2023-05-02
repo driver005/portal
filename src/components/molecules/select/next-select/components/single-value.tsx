@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import React from "react"
 import { GroupBase, SingleValueProps } from "react-select"
-import { hasPrefix } from "@utils"
+import { hasPrefix } from "./../utils"
 
 const SingleValue = <
     Option,

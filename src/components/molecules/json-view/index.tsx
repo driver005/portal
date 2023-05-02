@@ -63,7 +63,7 @@ const JSONView = ({ data }: JSONViewProps) => {
                                     background: "#F9FAFB",
                                 },
                             }}
-                            shouldExpandNode={() => false}
+                            shouldExpandNodeInitially={() => false}
                         />
                     </div>
                     <div className="flex items-center justify-between w-full">

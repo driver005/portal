@@ -1,8 +1,8 @@
 import isEqual from "lodash/isEqual"
 import { useEffect, useState } from "react"
 import { ActionMeta, GroupBase, OnChangeValue, Props } from "react-select"
-import Components from "@components"
-import { formatOptionLabel, hasLabel } from "@utils"
+import Components from "./components"
+import { formatOptionLabel, hasLabel } from "./utils"
 
 export const useSelectProps = <
     Option,

@@ -12,6 +12,7 @@ type FormToasterContainerProps = {
     loadingMessage?: string
     unsavedChangesMessage?: string
     icon?: React.ReactNode
+    children?: React.ReactNode
 }
 
 type MultiActionButtonProps = {
@@ -21,6 +22,7 @@ type MultiActionButtonProps = {
         icon?: any
     }[]
     className?: string
+    children?: React.ReactNode
 }
 
 const FormToasterContainer: React.FC<FormToasterContainerProps> & {
@@ -74,7 +76,7 @@ const FormToasterContainer: React.FC<FormToasterContainerProps> & {
         )
     }
 
-const Actions: React.FC = ({ children }) => {
+const Actions: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
     return (
         <div className="border-l border-grey-70 h-full">
             {Children.map(children, (child) => {

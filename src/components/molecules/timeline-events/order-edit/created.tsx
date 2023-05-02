@@ -17,7 +17,7 @@ import Button from "@components/fundamentals/button"
 import EditIcon from "@components/fundamentals/icons/edit-icon"
 import ImagePlaceholder from "@components/fundamentals/image-placeholder"
 import EventContainer from "../event-container"
-import { OrderEditContext } from "@context"
+import { OrderEditContext } from "../../../../domain/orders/edit/context"
 import CopyToClipboard from "@components/atoms/copy-to-clipboard"
 import { ByLine } from "."
 
@@ -45,7 +45,7 @@ const getInfo = (edit: OrderEdit): { type: string; user_id: string } => {
 }
 
 const EditCreated: React.FC<EditCreatedProps> = ({ event }) => {
-    const { isModalVisible, showModal, setActiveOrderEdit } = useContext(
+    const { isModalVisible, showModal, setActiveOrderEdit }: any = useContext(
         OrderEditContext
     )
 
@@ -117,7 +117,7 @@ const EditCreated: React.FC<EditCreatedProps> = ({ event }) => {
     }
 
     const onContinueEdit = () => {
-        setActiveOrderEdit(orderEdit.id)
+        setActiveOrderEdit(orderEdit?.id)
         showModal()
     }
 
@@ -135,7 +135,7 @@ const EditCreated: React.FC<EditCreatedProps> = ({ event }) => {
                 isFirst={event.first}
                 midNode={<ByLine user={user} />}
             >
-                {orderEdit.internal_note && (
+                {orderEdit?.internal_note && (
                     <div className="px-base py-small mt-base mb-large rounded-large bg-grey-10 inter-base-regular text-grey-90">
                         {orderEdit.internal_note}
                     </div>
@@ -143,8 +143,8 @@ const EditCreated: React.FC<EditCreatedProps> = ({ event }) => {
                 <div>
                     <OrderEditChanges orderEdit={orderEdit} />
                 </div>
-                {(orderEdit.status === "created" ||
-                    orderEdit.status === "requested") && (
+                {(orderEdit?.status === "created" ||
+                    orderEdit?.status === "requested") && (
                         <div className="space-y-xsmall mt-large">
                             {type === "created" ? (
                                 <>

@@ -7,7 +7,7 @@ import {
     MultiValueRemoveProps
 } from "react-select";
 import CrossIcon from "@components/fundamentals/icons/cross-icon";
-import { optionIsFixed } from "@utils";
+import { optionIsFixed } from "./../utils";
 
 const MultiValue = <
     Option,

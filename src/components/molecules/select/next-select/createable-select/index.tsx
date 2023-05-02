@@ -3,7 +3,7 @@ import React, { forwardRef } from "react"
 import type { GroupBase, SelectInstance } from "react-select"
 import type { CreatableProps } from "react-select/creatable"
 import CreatableReactSelect from "react-select/creatable"
-import { AdjacentContainer } from "@components"
+import { AdjacentContainer } from "../components"
 import { useSelectProps } from "../use-select-props"
 
 export type CreatableSelectComponent = <

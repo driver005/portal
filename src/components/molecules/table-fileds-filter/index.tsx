@@ -12,7 +12,7 @@ import Checkbox from "@components/atoms/checkbox"
 type Field = {
     id: string
     short: string
-    label: React.ReactChild | ((args: { isSelected: boolean }) => void)
+    label: React.ReactNode | ((args: { isSelected: boolean }) => void)
 }
 
 type ChipProps = Field & {

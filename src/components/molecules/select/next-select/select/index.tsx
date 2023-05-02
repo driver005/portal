@@ -9,7 +9,7 @@ import {
 import type { GroupBase, Props, SelectInstance } from "react-select"
 import ReactSelect from "react-select"
 import { ModalContext } from "../../../modal"
-import { AdjacentContainer } from "@components"
+import { AdjacentContainer } from "../components"
 import { useSelectProps } from "../use-select-props"
 
 export type SelectComponent = <

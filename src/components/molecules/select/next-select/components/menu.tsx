@@ -15,7 +15,7 @@ import {
 import Button from "@components/fundamentals/button"
 import CheckIcon from "@components/fundamentals/icons/check-icon"
 import ListArrowIcon from "@components/fundamentals/icons/list-arrow-icon"
-import { hasPrefix, hasSuffix, optionIsDisabled } from "@utils"
+import { hasPrefix, hasSuffix, optionIsDisabled } from "./../utils"
 import SelectPrimitives from "./select-primitives"
 
 const Menu = <

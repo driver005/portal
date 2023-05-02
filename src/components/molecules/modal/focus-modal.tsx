@@ -2,7 +2,7 @@ import clsx from "clsx"
 
 import Button from "@components/fundamentals/button"
 import CrossIcon from "@components/fundamentals/icons/cross-icon"
-import { ReactFCWithChildren } from "@utils"
+import { ReactFCWithChildren } from "@type/utils"
 
 type FocusModalElementProps = {
     className?: string
